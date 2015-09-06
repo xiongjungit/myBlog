@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/blog.css"}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    {{ghost_head}}
+</head>
+<body class="{{body_class}} nav-closed">
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1">
+            <header id="blog-head">
+                <a class="btn btn-default" id="zhb-title" href="{{@blog.url}}"><i class="fa fa-bookmark"></i> <i id="tohide">{{@blog.title}}</i></a>
+            </header>
+        </div>
+    </div>
+
+    {{{body}}}
+</div>
+
+
+{{> "foot"}}
+
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+<script src="{{asset "js/jquery-2.1.4.min.js"}}"></script>
+<script src="{{asset "js/blog.js"}}"></script>
+</body>
+</html>

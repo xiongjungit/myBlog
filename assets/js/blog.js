@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){jQuery("a").click(function(){jQuery("#zhb-title").html('<i class="fa fa-refresh fa-spin"></i>').delay(1000)})});

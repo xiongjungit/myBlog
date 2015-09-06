@@ -1,0 +1,61 @@
+.loop-time{color: #97979f}
+.fa-arrow-circle-right{color: #2f84db}
+#zhb-title{
+    background-color: black;
+    color: white;
+    margin-top: 2%;
+}
+#blog-head{margin-top: 2em}
+#zhb-title:hover{
+    background-color: #EF7F2F;
+    transition-duration: 500ms;
+}
+.post-excerpt{
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.post-excerpt p{
+    line-height: 2;
+}
+.read-more{
+    color: #EF7F2F;
+    text-align: center;
+    height: 10%;
+    width: 17%;
+}
+.read-more:hover{
+    color: #ffa918;
+    text-decoration: none;
+    transition: 500ms;
+}
+.excerpt-foot{
+    margin-bottom: 4%;
+}
+.post-title{
+    font-size: 24px;
+    color: #6BA5CD;
+}
+#title-link:hover{
+    text-decoration: none;
+    transition: 500ms;
+}
+.content{
+    margin-top: 4em;
+}
+.blog-footer{
+    border-top: solid 1px #E7EBF5;
+    margin-top: 3%
+}
+.excerpt-tags{
+    font-size: 1em;
+}
+
+.copyright{padding-top: 10px}
+#entry-title{margin-bottom: 4%;}
+i, cite, em, var, address, dfn{font-style: normal}
+@media (max-device-width: 1000px) {
+    #blog-head{position: absolute}
+}
+@media (min-device-width: 1000px) {
+    #blog-head{position: fixed}
+}

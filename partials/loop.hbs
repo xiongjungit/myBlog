@@ -1,0 +1,25 @@
+<div class="row">
+        {{! This is the post loop - each post will be output using this markup }}
+        {{#foreach posts}}
+            <div class=" col-md-8 col-lg-8 col-md-offset-2  col-lg-offset-2">
+                <article class="{{post_class}}">
+                    <header class="post-header">
+                        <h2 class="post-title"><a id="title-link"href="{{url}}">{{{title}}}</a></h2>
+                        {{#if tags}}<div class="excerpt-tags"> <i class="fa fa-tag"></i><span>  </span>{{tags}}</div>{{/if}}
+                    </header>
+
+                    <div class="post-excerpt">
+                        <p>{{excerpt words="26"}} <i class="fa fa-arrow-circle-right"></i></p>
+                    </div>
+
+                    <div class="excerpt-foot">
+                        <a class="read-more btn btn-link btn-xs" href="{{url}}"><i class="fa fa-paw"></i> 打开全文</a>
+                        <p class="loop-time pull-right">
+                            <i class="fa fa-pencil" aria-hidden="true"></i> <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY-MM-DD"}}</time>
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+        {{/foreach}}
+</div>
