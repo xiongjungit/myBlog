@@ -49,7 +49,7 @@
 .excerpt-tags{
     font-size: 1em;
 }
-
+#disqus_thread{margin-top:10em;}
 .copyright{padding-top: 10px}
 #entry-title{margin-bottom: 4%;}
 i, cite, em, var, address, dfn{font-style: normal}
